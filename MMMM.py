@@ -97,7 +97,7 @@ index_name = '^CRSLDX'  # NIFTY500
 start_date = datetime.datetime.now() - datetime.timedelta(days=400)
 end_date = datetime.date.today()
 
-tickers = pd.read_excel('C:\\Users\\Venkat Jaswanth\\Downloads\\MCAP28032024.xlsx')
+tickers = pd.read_excel('/home/ec2-user/MCAP28032024.xlsx')
 last_column_name = tickers.columns[-1]  # Get the name of the last column
 
 tickers[last_column_name] = pd.to_numeric(tickers[last_column_name], errors='coerce')
